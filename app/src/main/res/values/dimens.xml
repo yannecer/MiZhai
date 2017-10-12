@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="heightLine">0.5dp</dimen>
+    <dimen name="heightTitle">50dp</dimen>
+
+
+
+    <dimen name="sizeCity">16sp</dimen>
+    <dimen name="sizeSearch">12sp</dimen>
+
+
+</resources>

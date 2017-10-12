@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightTitle"
+        android:background="@color/colorMain">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/switch_city_icon"
+            android:gravity="center"
+            android:drawablePadding="-5dp"
+            android:paddingRight="10dp"
+            android:text="@string/city_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sizeCity" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="@dimen/sizeSearch"
+            android:textColor="@color/colorLight"
+            android:background="@drawable/bg_title_search"
+            android:text="@string/search" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/map_finder"
+            android:scaleType="center"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

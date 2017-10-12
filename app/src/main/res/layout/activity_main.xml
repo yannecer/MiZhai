@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.necer.bean.User" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightLine"
+                android:background="@color/colorLine" />
+
+            <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                tl:tl_iconHeight="22dp"
+                tl:tl_iconWidth="22dp"
+                tl:tl_indicator_height="0dp"
+                tl:tl_textSelectColor="@color/colorMain"
+                tl:tl_textUnselectColor="@color/colorNomal"
+                tl:tl_textsize="13sp"
+                tl:tl_underline_height="0dp" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_tablayout" />
+
+    </RelativeLayout>
+
+
+</layout>
